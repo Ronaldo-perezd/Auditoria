@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="class.soapclient.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279196170628" remote="131116279790000000" />
+<file name="class.soap_val.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279197229362" remote="131116279790000000" />
+<file name="class.soap_parser.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279196503330" remote="131116279790000000" />
+<file name="class.soap_fault.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279196260695" remote="131116279790000000" />
+<file name="class.soap_transport_http.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279197069230" remote="131116279790000000" />
+<file name="class.xmlschema.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279197830416" remote="131116279790000000" />
+<file name="class.wsdl.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279197429528" remote="131116279790000000" />
+<file name="class.soap_server.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279196724562" remote="131116279790000000" />
+<file name="nusoap.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279199091947" remote="131116284000000000" />
+<file name="changelog" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279195800284" remote="131116284000000000" />
+<file name="class.nusoap_base.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279196019498" remote="131116284000000000" />
+<file name="class.wsdlcache.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279197630264" remote="131116284000000000" />
+<file name="Copy of nusoap.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279198310816" remote="131116284000000000" />
+<file name="Copy [2] of nusoap.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279198801221" remote="131116284000000000" />
+<file name="nusoapmime.php" server="172.18.0.44//Aplicacion/www/mincit_ponal/" local="131116279200167256" remote="131116284000000000" />
+<file name="changelog" server="172.18.0.204//aplicacion/www/ci/" local="131116279195800284" remote="131461600400000000" />
+<file name="class.nusoap_base.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279196019498" remote="131461600400000000" />
+<file name="class.soapclient.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279196170628" remote="131461600400000000" />
+<file name="class.soap_fault.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279196260695" remote="131461600400000000" />
+<file name="class.soap_parser.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279196503330" remote="131461600400000000" />
+<file name="class.soap_server.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279196724562" remote="131461600400000000" />
+<file name="class.soap_transport_http.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279197069230" remote="131461600400000000" />
+<file name="class.soap_val.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279197229362" remote="131461600400000000" />
+<file name="class.wsdl.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279197429528" remote="131461600400000000" />
+<file name="class.wsdlcache.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279197630264" remote="131461600400000000" />
+<file name="class.xmlschema.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279197830416" remote="131461600400000000" />
+<file name="Copy of nusoap.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279198310816" remote="131461600410000000" />
+<file name="Copy [2] of nusoap.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279198801221" remote="131461600410000000" />
+<file name="nusoap.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279199091947" remote="131461600410000000" />
+<file name="nusoapmime.php" server="172.18.0.204//aplicacion/www/ci/" local="131116279200167256" remote="131461600410000000" />
+</dwsync>

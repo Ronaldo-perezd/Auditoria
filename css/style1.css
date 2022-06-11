@@ -1,0 +1,14 @@
+*{
+
+	margin: 0;
+	paint-order: 0;
+	box-sizing: border-box;
+}
+
+.form-login{
+	width: 400px;
+	height: 340px;
+	background: #FFFFFF;
+	background-image: url(assets/dist/img/background3.jpg);
+	background-size: cover;
+}
