@@ -44,7 +44,13 @@ class Login extends CI_Controller
 					'login' => TRUE
 				);
 				$this->session->set_userdata($data);
-				redirect(base_url().'home');
+				
+				if ($resEmpresa->status_Pass ==1){
+					redirect(base_url().'crearUsuario/UpdatePass/');
+				}
+				else{
+					redirect(base_url().'home');
+				}
 			}			
 	}
 

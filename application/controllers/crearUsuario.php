@@ -7,6 +7,7 @@ class crearUsuario extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Admin_model');
+		$this->load->model('Login_model');
 
 		if(!$this->session->userdata('login'))
 		{
@@ -43,7 +44,7 @@ class crearUsuario extends CI_Controller
 		{
 		    $data = array(
 				'documento_IT' => $user,
-				'contrasena' => $contrasena,
+				'contrasena' => md5($contrasena),
 				'status_Pass' => 1,
 		    );
 
@@ -61,6 +62,69 @@ class crearUsuario extends CI_Controller
 		{
 		$this->GetUsers();
 		}
+	}
+
+
+ 	public function CambiarContrasena()
+    {
+    	$passwordAnt = $this->input->post('passwordAnt');
+        $this->form_validation->set_rules('passwordAnt', 'contraseña', 'required');
+        
+        $passwordNew = $this->input->post('passwordNew');
+        $this->form_validation->set_rules('passwordNew', 'contraseña', 'required');
+
+        //$this->form_validation->set_rules('passwordNew', 'Nueva Contraseña', 'required|alpha_numeric|matches[passwordConf]|min_length[8]', array('matches' => 'Las contraseñas no coinciden'));
+
+		$passwordConf = $this->input->post('passwordConf');
+        $this->form_validation->set_rules('passwordConf', 'contraseña', 'required');
+
+       	//$this->form_validation->set_rules('passwordConf', 'Confirmar Nueva Contraseña', 'required|alpha_numeric|matches[passwordNew]|min_length[8]',array('matches' => 'Las contraseñas no coinciden'));
+
+       /*	echo $passwordAnt;
+       	echo $passwordNew;
+       	echo $passwordConf;
+		*/
+
+		$user = $this->session->userdata('documento_IT');  
+
+		if ($this->form_validation->run())
+		{
+        	$resEmpresa = $this->Login_model->LoginEmpresa($user, $passwordAnt);
+			if(!$resEmpresa)
+			{
+				$this->session->set_flashdata('error', 'La contraseña Actual es Incorrecta');
+				redirect(base_url());
+			}
+			else 
+			{	
+				$data2 = array(
+				'contrasena' => md5($passwordConf),
+				'status_Pass' => 2,
+				);
+
+				if($this->Login_model->CambiarClave($data2))
+			    {
+				    $this->session->set_flashdata('error', 'La contraseña Ha sido actualizada');
+				    redirect(base_url().'home');
+			    }
+			    else
+			    {
+				    $this->session->set_flashdata('error', 'La contraseña No ha sido actualizada');
+				    redirect(base_url().'crearUsuario/UpdatePass/');
+			    }
+			}
+		}
+		else{
+			$this->UpdatePass();
+		}
+    }
+
+    public function UpdatePass()
+	{
+		$data = array();
+		$this->template->set('title', 'INFORMES');
+		//$this->template->load('layout', 'contents' , 'login/changePass', $data);
+		$this->load->view('login/changePass');
 	}
 }
 /* Fin del archivo Login.php */
